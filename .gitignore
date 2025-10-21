@@ -19,3 +19,4 @@ results/
 
 # Archivos de copia de seguridad (NetBeans suele usar .orig)
 *.orig
+/Desafio7/nbproject/private/
