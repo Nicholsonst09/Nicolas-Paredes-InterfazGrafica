@@ -1,0 +1,21 @@
+# Directorios de compilación y salida
+/build/
+/dist/
+
+/nbproject/private/
+
+# Archivos de caché para la ejecución (si existen)
+*.class
+
+nbproject/private/
+build/
+dist/
+nbbuild/
+results/
+.nbattrs
+
+# Archivos de log
+*.log
+
+# Archivos de copia de seguridad (NetBeans suele usar .orig)
+*.orig
