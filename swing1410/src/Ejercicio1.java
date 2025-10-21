@@ -62,7 +62,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
             }
         });
         
-        btnIgual.addActionListener(new ActionListener() {
+        btnMultiplicar.addActionListener(new ActionListener() { 
             @Override
             public void actionPerformed(ActionEvent e) {
                 prepararOperacion("*");
@@ -85,7 +85,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
         }
     }
     
-    // Este método lo vas a crear haciendo doble clic en el botón "=" en el diseñador
+    
     
     
     private void limpiar() {
@@ -109,6 +109,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txtResultado = new javax.swing.JTextField();
         lblResultado = new javax.swing.JLabel();
+        btnLimpiar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         btn1 = new javax.swing.JButton();
         btn2 = new javax.swing.JButton();
@@ -132,10 +133,18 @@ public class Ejercicio1 extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtResultado.setEditable(false);
-        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 110, -1));
+        jPanel1.add(txtResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 110, -1));
 
         lblResultado.setText("Resultado");
-        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
+        jPanel1.add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 60, -1));
+
+        btnLimpiar.setText("C");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 40, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -185,6 +194,11 @@ public class Ejercicio1 extends javax.swing.JFrame {
         panel3.add(btnIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 73, 70, 20));
 
         btnSumar.setText("+");
+        btnSumar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumarActionPerformed(evt);
+            }
+        });
         panel3.add(btnSumar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 50, -1));
 
         btnDividir.setText("/");
@@ -272,6 +286,14 @@ public class Ejercicio1 extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_btnIgualActionPerformed
 
+    private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSumarActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        limpiar();
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -320,6 +342,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
     private javax.swing.JButton btn9;
     private javax.swing.JButton btnDividir;
     private javax.swing.JButton btnIgual;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnMultiplicar;
     private javax.swing.JButton btnRestar;
     private javax.swing.JButton btnSumar;
